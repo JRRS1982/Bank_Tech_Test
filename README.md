@@ -41,6 +41,8 @@ An apple macbook was used to write code using VSCode as an editor and;
 
 * Ruby was used as the main language.
 * RSpec used for testing.
+* Capybara used for testing.
+* Simplecov used for checking test coverage.
 
 ### Code style
 
@@ -49,7 +51,7 @@ Rubocop 0.65.0 was used for linting and stylying the Ruby code.
 ### Tests
 
 A TDD process was used in the development of this project, please see the
-attached spec files for details of the testing that was carried out. 
+attached spec files for details of the testing that was carried out.
 
 ## Installation / Running / How it works
 
