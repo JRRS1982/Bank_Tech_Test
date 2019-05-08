@@ -35,6 +35,39 @@ As a bank customer,
 So that i can keep track of what i have saved,
 On request I want to be provvided a bank statement (with date of deposit, amount of deposit and current balance on it).
 
+## Problem Solving / Workings
+
+My original consideration for the project is;
+
+Inputs: an object, probably a transaction object, which has a variable for the amount, a value for the date of the
+transaction and an attribute confirming if it is a deposit or a withdrawal.
+
+Outputs: a statement, an object (probably best for encapsulation) that contains a table, that table displays all the
+transaction objects and a running balance.
+
+Objects:
+* "Bank"
+Variables: An array of "Account" objects.
+Methods: Create an "Account" object.
+
+* "Account"
+Variables: An array of "Transaction" objects.
+Methods: Create a "Transaction" object.
+Methods: Create a "Statement" object.
+
+* "Transaction"
+Variables: "Date"
+Variables: "Amount"
+Variables: "Deposit?"
+Methods: Ideally none, its just has attributes, when it is created.
+
+* "Statement"
+Variables: A "list of transaction dates"; as a string
+Variables: A "list of deposits"; as integers
+Variables: A "list of withdrawals"; as integers
+Variables: A "list of the running balance"; as integers
+Methods: Ideally none, the statement is displayed when created.
+
 ## Tech / framework used
 
 An apple macbook was used to write code using VSCode as an editor and;
@@ -43,6 +76,7 @@ An apple macbook was used to write code using VSCode as an editor and;
 * RSpec used for testing.
 * Capybara used for testing.
 * Simplecov used for checking test coverage.
+* Pry to assist with debugging.
 
 ### Code style
 

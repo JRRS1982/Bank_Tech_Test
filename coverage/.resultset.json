@@ -1,6 +1,38 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/spec/Bank_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/lib/Bank.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null
+      ],
       "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/spec/Money_spec.rb": [
         1,
         1,
@@ -27,6 +59,6 @@
         null
       ]
     },
-    "timestamp": 1557227370
+    "timestamp": 1557232931
   }
 }
