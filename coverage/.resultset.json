@@ -8,6 +8,20 @@
 
       ],
       "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/spec/Transaction_spec.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -19,21 +33,27 @@
         null,
         null,
         1,
-        null,
-        1,
-        2,
         1,
         1,
         1,
-        0,
-        0,
+        1,
         null,
         null
       ],
       "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/lib/Transaction.rb": [
-
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1557330453
+    "timestamp": 1557349050
   }
 }

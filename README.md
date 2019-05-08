@@ -1,7 +1,7 @@
 # Project title
 
 Bank tech test: this is a common tech test, which I will complete to test my ability as a developer. It will test my OO
-and TDD skills, it will be completed solo.
+and TDD skills, it will be completed solo, reuire me to refactor along the way and consider best practice.
 
 ### Motivation / Approach
 
@@ -14,8 +14,9 @@ required software (Rspec for testing).
 
 ### Build status
 
-The project is currently under construction, it may not be completed as this is a practice exercise. I will update this
-readme once I am happy with the final code quality / programme. 
+The project is currently under construction, it may not be completed as this is a practice exercise.
+
+I will update this readme once I am happy with the final code quality / programme.
 
 ### Screenshots / UML / Notes / Diagrams
 
@@ -33,11 +34,11 @@ I want to be able to withdraw it from the bank.
 
 As a bank customer,
 So that i can keep track of what i have saved,
-On request I want to be provvided a bank statement (with date of deposit, amount of deposit and current balance on it).
+On request I want to be provided a bank statement (with date of transactions, amount of transactions and a running balance on it).
 
 ## Problem Solving / Workings
 
-My original consideration for the project is;
+My original consideration for the project was;
 
 Inputs: an object, probably a transaction object, which has a variable for the amount, a value for the date of the
 transaction and an attribute confirming if it is a deposit or a withdrawal.
@@ -45,7 +46,7 @@ transaction and an attribute confirming if it is a deposit or a withdrawal.
 Outputs: a statement, an object (probably best for encapsulation) that contains a table, that table displays all the
 transaction objects and a running balance.
 
-### Objects
+### Objects v1
 
 * "Bank"
 Variables: An array of "Account" objects.
@@ -68,6 +69,29 @@ Variables: A "list of deposits"; as integers
 Variables: A "list of withdrawals"; as integers
 Variables: A "list of the running balance"; as integers
 Methods: Ideally none, the statement is displayed when created.
+
+### Objects v2
+
+* "Account"
+Variables: transaction_history(array of transaction objects)
+Methods: create_transaction(date:date.new, amount:int, deposit:boolean)
+Methods: create_statement(transaction_history)
+
+* "Transaction"
+Variables: date:Date
+Variables: amount:Float to two decimals
+Variables: deposit:boolean
+Methods: Ideally none, its just has attributes, when it is created.
+
+* "Statement"
+Variables: transaction_history
+Methods: running_balance(transaction_history)
+Methods: print_statement(transaction_history, running_balance)
+
+Replacing my original object ideas with v2 here, means that the objects are
+better encapsulated. I think that it makes better sense to me, although I am
+aware that the print statement method is going to be fairly complex and may
+require some refactoring.
 
 ## Tech / framework used
 

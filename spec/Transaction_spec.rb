@@ -1,21 +1,31 @@
+require 'Transaction'
+require 'Timecop'
 
-# class Transaction
-#   attr_reader :amount, :date, :deposit?
-  
-#   def initialize(amount: amount, date = Date.now)
-#     @amount = amount
+# describe 'Transaction' do
+#   it 'should be an object' do
+#     this = Transaction.new
+#     expect(this).to be_a(Transaction)
 #   end
-  
 # end
 
-require 'Transaction'
+# describe 'Transaction' do
+#   it 'should have an amount' do
+#     this = Transaction.new(amount: 100)
+#     expect(this).to have_attributes(amount: 100)
+#   end
+# end
+
+# describe 'Transaction' do
+#   it 'should have an amount and a deposit' do
+#     this = Transaction.new(amount: 100, deposit: true)
+#     expect(this).to have_attributes(amount: 100, deposit: true)
+#   end
+# end
 
 describe 'Transaction' do
-  subject(:transaction) { described_class.new(date: "08/05/2019", amount: 100, deposit?: true) }
-  let("08/05/2019") { double :date }
-  it 'should have an amount as an integer' do
-    expect(transaction.date).to eq("08/05/2019")
-    expect(transaction.amount).to eq(100)
-    expect(transaction.deposit?).to eq(true)
+  it 'receives amount, deposit and date' do
+    testdate = '11-09-2001'
+    tran = Transaction.new(amount: 100, deposit: true, date: testdate)
+    expect(tran).to have_attributes(amount: 100, deposit: true, date: '11-09-2001')
   end
 end
