@@ -17,6 +17,7 @@
 require 'simplecov'
 require 'simplecov-console'
 require 'capybara/rspec'
+require 'timecop'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
   SimpleCov::Formatter::Console,

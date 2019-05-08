@@ -45,7 +45,8 @@ transaction and an attribute confirming if it is a deposit or a withdrawal.
 Outputs: a statement, an object (probably best for encapsulation) that contains a table, that table displays all the
 transaction objects and a running balance.
 
-Objects:
+### Objects
+
 * "Bank"
 Variables: An array of "Account" objects.
 Methods: Create an "Account" object.
@@ -77,6 +78,7 @@ An apple macbook was used to write code using VSCode as an editor and;
 * Capybara used for testing.
 * Simplecov used for checking test coverage.
 * Pry to assist with debugging.
+* Timecop Gem used to create mock date/time for the transactions.
 
 ### Code style
 
