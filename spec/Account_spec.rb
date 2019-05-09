@@ -1,14 +1,15 @@
 require 'Account'
+require 'pry'
 
 describe 'Account' do
+  let(:acc) { Account.new }
+
   it 'should be an object' do
-    this = Account.new
-    expect(this).to be_a(Account)
+    expect(acc).to be_a(Account)
   end
 
-  it 'should have an array for account history' do
-    this = Account.new
-    expect(this.transaction_history).to eq([])
+  it 'should be able to add a transaction object to the account' do
+    acc.create_transaction(amount: 100, deposit: true)
+    expect(acc:@tranaction_history).not_to be_empty
   end
-
 end
