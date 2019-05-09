@@ -1,6 +1,7 @@
 require 'Transaction'
 require 'Timecop'
 
+# test 1
 # describe 'Transaction' do
 #   it 'should be an object' do
 #     this = Transaction.new
@@ -8,6 +9,7 @@ require 'Timecop'
 #   end
 # end
 
+# # test 2
 # describe 'Transaction' do
 #   it 'should have an amount' do
 #     this = Transaction.new(amount: 100)
@@ -15,6 +17,7 @@ require 'Timecop'
 #   end
 # end
 
+# test 3
 # describe 'Transaction' do
 #   it 'should have an amount and a deposit' do
 #     this = Transaction.new(amount: 100, deposit: true)
@@ -22,6 +25,7 @@ require 'Timecop'
 #   end
 # end
 
+# test 4
 describe 'Transaction' do
   it 'receives amount, deposit and date' do
     testdate = '11-09-2001'
