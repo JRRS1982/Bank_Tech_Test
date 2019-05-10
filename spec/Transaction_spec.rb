@@ -1,5 +1,4 @@
 require 'Transaction'
-require 'Timecop'
 
 # test 1
 # describe 'Transaction' do
