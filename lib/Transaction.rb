@@ -1,4 +1,4 @@
-# this will go to the account as an object and holds the details of what happened.
+# this will go to the account as an object and holds the attributes.
 class Transaction
   attr_reader :amount, :deposit, :withdrawal, :date
 

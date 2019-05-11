@@ -19,5 +19,29 @@ describe 'Account' do
       acc.create_transaction(amount: 200)
       expect(acc.history.length).to eq(2)
     end
+
+    it 'should define deposit as true and withdrawal as false' do
+      acc.create_transaction(amount: 100)
+      expect(acc.history[0].deposit).to eq(true)
+      expect(acc.history[0].deposit).not_to eq(false)
+      expect(acc.history[0].withdrawal).to eq(false)
+      expect(acc.history[0].withdrawal).not_to eq(true)
+    end
+
+    it 'should define deposit as true and withdrawal as false' do
+      acc.create_transaction(amount: -100)
+      expect(acc.history[0].deposit).to eq(false)
+      expect(acc.history[0].deposit).not_to eq(true)
+      expect(acc.history[0].withdrawal).to eq(true)
+      expect(acc.history[0].withdrawal).not_to eq(false)
+    end
+
+    it 'should define deposit as true and withdrawal as false' do
+      acc.create_transaction(amount: 0)
+      expect(acc.history[0].deposit).to eq(false)
+      expect(acc.history[0].deposit).not_to eq(true)
+      expect(acc.history[0].withdrawal).to eq(false)
+      expect(acc.history[0].withdrawal).not_to eq(true)
+    end
   end
 end
