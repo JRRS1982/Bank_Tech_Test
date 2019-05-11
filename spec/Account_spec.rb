@@ -47,7 +47,7 @@ describe 'Account' do
 
   describe '#create_statement' do
     it 'should print the heading of a table' do
-      expect(acc.create_statement).to eq('date || credit || debit || balance')
+      expect(acc.create_statement).to be_a(Statement)
     end
 
   describe '#account_balance' do

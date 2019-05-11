@@ -1,8 +1,9 @@
 require './lib/Transaction.rb'
+require './lib/Statement.rb'
 
 # this is the master class, for making statements and transactions.
 class Account
-  
+
   def initialize
     @transaction_history = []
     @balance = 0
@@ -37,7 +38,6 @@ class Account
   end
 
   def create_statement
-    heading = 'date || credit || debit || balance'
-    heading
+    sta = Statement.new(@transaction_history)
   end
 end
