@@ -5,14 +5,27 @@ class Account
   def initialize
     @transaction_history = []
   end
-  
+
   def history
     @transaction_history
   end
 
-  def create_transaction(amount:, deposit:, date: Time.now)
-    tran = Transaction.new(amount: amount,deposit: deposit, date: date)
+  def create_transaction(amount:)
+    date = Time.now
+    if amount > 0
+      deposit = true
+      withdrawal = false
+    elsif amount < 0
+      deposit = false
+      withdrawal = true
+    else
+      deposit = false
+      withdrawal = false
+    end
+    tran = Transaction.new(amount: amount,
+                           deposit: deposit,
+                           withdrawal: withdrawal,
+                           date: date)
     @transaction_history << tran
   end
-
 end
