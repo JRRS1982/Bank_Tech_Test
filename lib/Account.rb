@@ -2,15 +2,22 @@ require './lib/Transaction.rb'
 
 # this is the master class, for making statements and transactions.
 class Account
+  
   def initialize
     @transaction_history = []
+    @balance = 0
   end
 
   def history
     @transaction_history
   end
 
+  def account_balance
+    @balance
+  end
+
   def create_transaction(amount:)
+    @balance += amount
     date = Time.now
     if amount > 0
       deposit = true
@@ -27,5 +34,10 @@ class Account
                            withdrawal: withdrawal,
                            date: date)
     @transaction_history << tran
+  end
+
+  def create_statement
+    heading = 'date || credit || debit || balance'
+    heading
   end
 end

@@ -44,4 +44,26 @@ describe 'Account' do
       expect(acc.history[0].withdrawal).not_to eq(true)
     end
   end
+
+  describe '#create_statement' do
+    it 'should print the heading of a table' do
+      expect(acc.create_statement).to eq('date || credit || debit || balance')
+    end
+
+  describe '#account_balance' do
+    it 'should have a zero balance before any transactions' do
+      expect(acc.account_balance).to eq(0)
+    end
+
+    it 'should increase the balance after a deposit' do
+      acc.create_transaction(amount: 100)
+        expect(acc.account_balance).to eq(100)
+      end
+    end
+
+    it 'should reduce the balance after a withdrawal' do
+      acc.create_transaction(amount: -100)
+        expect(acc.account_balance).to eq(-100)
+    end
+  end
 end
