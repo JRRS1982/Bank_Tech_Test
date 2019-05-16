@@ -143,10 +143,28 @@
         1,
         1,
         null,
+        null,
+        1,
+        0,
+        null,
         null
       ],
       "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/spec/Statement_spec.rb": [
         1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         1,
         1,
@@ -154,9 +172,13 @@
         1,
         null,
         null,
+        null,
         1,
         1,
-        1,
+        0,
+        0,
+        0,
+        null,
         null,
         null
       ],
@@ -178,6 +200,6 @@
         null
       ]
     },
-    "timestamp": 1557587563
+    "timestamp": 1558009134
   }
 }

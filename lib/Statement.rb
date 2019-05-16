@@ -10,4 +10,8 @@ class Statement
     heading = 'date || credit || debit || balance'
     heading
   end
+
+  def statement_body(statement_input)
+    @statement_input
+  end
 end
