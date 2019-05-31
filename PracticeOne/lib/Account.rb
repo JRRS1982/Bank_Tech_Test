@@ -30,14 +30,13 @@ class Account
       deposit = false
       withdrawal = false
     end
-    tran = Transaction.new(amount: amount,
-                           deposit: deposit,
-                           withdrawal: withdrawal,
-                           date: date)
-    @transaction_history << tran
+    @transaction_history << Transaction.new(amount: amount,
+                                            deposit: deposit,
+                                            withdrawal: withdrawal,
+                                            date: date)
   end
 
   def create_statement
-    sta = Statement.new(@transaction_history)
+    Statement.new(@transaction_history)
   end
 end
