@@ -2,7 +2,7 @@
 
 This is my second attempt at the Bank Tech Test, for practice and repetition.
 
-### Motivation / Approach
+## Motivation / Approach
 
 This project was made to develop my object orientated programming skills, and
 technical ability to build a Ruby project which is well encapsulated, DRY and
@@ -90,11 +90,11 @@ NOW CREATE A FEATURE TEST FIRST
 
 describe 'Greeter' do
   it 'greets Rico' do
-		THIS EXAMPLE NEEDS TO BE IMPROVED TO A GOOD FEATURE TEST
+    THIS EXAMPLE NEEDS TO BE IMPROVED TO A GOOD FEATURE TEST
     expect(greet('Rico')).to eq('Hello, Rico, how are you today?')
   end
 end
 
-REMEMBER TO ADD A LIB AND FEATURES FOLDERS 
-AND REQUIRE RELATIVE OF CODE IN THE SPEC HELPER 
+REMEMBER TO ADD A LIB AND FEATURES FOLDERS
+AND REQUIRE RELATIVE OF CODE IN THE SPEC HELPER
 AND REQUIRE SPEC HELPER IN SPEC FILE
