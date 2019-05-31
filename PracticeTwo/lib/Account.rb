@@ -1,4 +1,5 @@
 class Account
+  attr_reader :account_balance
 
   def initialize
     @account_balance = 0
@@ -6,6 +7,10 @@ class Account
 
   def deposit(amount)
     @account_balance += amount
+  end
+
+  def withdrawal(amount)
+    @account_balance -= amount
   end
 
   def balance

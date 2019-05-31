@@ -9,17 +9,29 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         1,
         1,
         1,
         1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
       "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/PracticeTwo/lib/Account.rb": [
         1,
+        1,
         null,
         1,
         4,
@@ -27,6 +39,10 @@
         null,
         1,
         4,
+        null,
+        null,
+        1,
+        1,
         null,
         null,
         1,
@@ -44,16 +60,9 @@
         1,
         1,
         null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
         null
       ]
     },
-    "timestamp": 1559321504
+    "timestamp": 1559328576
   }
 }

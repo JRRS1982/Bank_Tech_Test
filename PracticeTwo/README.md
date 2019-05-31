@@ -21,7 +21,7 @@ a practice exercise.
 
 Should there be any images, please find them in the images folder of the project.
 
-### User Stories
+### User Stories (being built up to fit acceptance criteria)
 
 As a person with money,
 I want to protect it in a guarded account,
@@ -35,7 +35,24 @@ As a person with money,
 I want to be able to see what i have in my account,
 so that i can check that the bank hasn't stolen my money itself.
 
+As a person with money,
+I want to be able to withdral from the account i have save into,
+so that i can spend my hard earnt money.
+
 AT COMPLETION: PROGRESS OF SOLVING THE USER STORIES, HOW FAR DID I GET IN SOLVING THEM?
+
+## Acceptance criteria (of the tech test)
+
+Given a client makes a deposit of 1000 on 10-01-2012
+And a deposit of 2000 on 13-01-2012
+And a withdrawal of 500 on 14-01-2012
+When she prints her bank statement
+Then she would see
+
+date || credit || debit || balance
+14/01/2012 || || 500.00 || 2500.00
+13/01/2012 || 2000.00 || || 3000.00
+10/01/2012 || 1000.00 || || 1000.00
 
 ### Problem solving - workings
 
