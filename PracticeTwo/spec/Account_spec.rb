@@ -34,4 +34,11 @@ describe 'Acccount ' do
       expect(my_account.withdrawal(100)).to eq(50)
     end
   end
+
+  describe '#statement' do
+    it 'prints a heading for each column' do
+      my_account = Account.new
+      expect(my_account.statement).to eq('date || credit || debit || balance')
+    end
+  end
 end

@@ -43,6 +43,10 @@ As a person with money,
 I want to see the balance of my account after each transaction,
 so that i am aware of my current balance.
 
+As a person with money,
+I want to see a nice tidy table of the transactions,
+so that i am can look over all the transactions lazily.
+
 AT COMPLETION: PROGRESS OF SOLVING THE USER STORIES, HOW FAR DID I GET IN SOLVING THEM?
 
 ## Acceptance criteria (of the tech test)

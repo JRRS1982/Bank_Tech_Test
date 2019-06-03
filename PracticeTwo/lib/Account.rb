@@ -18,4 +18,8 @@ class Account
   def balance
     @account_balance
   end
+
+  def statement
+    p 'date || credit || debit || balance'
+  end
 end
