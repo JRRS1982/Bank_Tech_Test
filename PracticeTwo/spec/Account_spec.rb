@@ -13,6 +13,11 @@ describe 'Acccount ' do
       my_account.deposit(200)
       expect(my_account.balance).to eq(200)
     end
+
+    it 'shows you the balance after a deposit' do
+      my_account = Account.new
+      expect(my_account.deposit(200)).to eq(200)
+    end
   end
 
   describe '#withdrawal' do
@@ -21,6 +26,12 @@ describe 'Acccount ' do
       my_account.deposit(150)
       my_account.withdrawal(100)
       expect(my_account.balance).to eq(50)
+    end
+
+    it 'shows balance after a withdrawal' do
+      my_account = Account.new
+      my_account.deposit(150)
+      expect(my_account.withdrawal(100)).to eq(50)
     end
   end
 end

@@ -7,10 +7,12 @@ class Account
 
   def deposit(amount)
     @account_balance += amount
+    @account_balance
   end
 
   def withdrawal(amount)
     @account_balance -= amount
+    @account_balance
   end
 
   def balance

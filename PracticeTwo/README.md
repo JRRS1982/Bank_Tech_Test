@@ -36,8 +36,12 @@ I want to be able to see what i have in my account,
 so that i can check that the bank hasn't stolen my money itself.
 
 As a person with money,
-I want to be able to withdral from the account i have save into,
+I want to be able to withdral from the account i have saved into,
 so that i can spend my hard earnt money.
+
+As a person with money,
+I want to see the balance of my account after each transaction,
+so that i am aware of my current balance.
 
 AT COMPLETION: PROGRESS OF SOLVING THE USER STORIES, HOW FAR DID I GET IN SOLVING THEM?
 
