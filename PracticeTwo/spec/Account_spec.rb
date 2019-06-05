@@ -1,6 +1,9 @@
 require 'Account'
 
 describe 'Acccount ' do
+
+  let(:today) { Date.new }
+
   describe '#deposit' do
     it 'allows you to deposit amounts' do
       my_account = Account.new
@@ -8,13 +11,13 @@ describe 'Acccount ' do
       expect(my_account.balance).to eq(100)
     end
 
-    it 'allows you to deposit different values' do
+    it 'deposit different values' do
       my_account = Account.new
       my_account.deposit(200)
       expect(my_account.balance).to eq(200)
     end
 
-    it 'shows you the balance after a deposit' do
+    it 'shows balance after a deposit' do
       my_account = Account.new
       expect(my_account.deposit(200)).to eq(200)
     end
@@ -36,9 +39,14 @@ describe 'Acccount ' do
   end
 
   describe '#statement' do
-    it 'prints a heading for each column' do
+    it 'includes a heading' do
       my_account = Account.new
-      expect(my_account.statement).to eq('date || credit || debit || balance')
+      expect(my_account.statement).to include('date || credit || debit || balance')
+    end
+    
+    it 'includes a heading' do
+      my_account = Account.new
+      expect(my_account.statement).to include('date || credit || debit || balance')
     end
   end
 end

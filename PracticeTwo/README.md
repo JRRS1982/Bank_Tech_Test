@@ -108,18 +108,3 @@ WHAT FURTHER FEATURES WOULD I ADD IF I HAD MORE TIME?
 No contributions are required at this time, as this is a training exercise.
 
 This is a solo project that requires reference to no external tutorials.
-
-MODEL IN A CLASS DIAGRAM NOW
-
-NOW CREATE A FEATURE TEST FIRST
-
-describe 'Greeter' do
-  it 'greets Rico' do
-    THIS EXAMPLE NEEDS TO BE IMPROVED TO A GOOD FEATURE TEST
-    expect(greet('Rico')).to eq('Hello, Rico, how are you today?')
-  end
-end
-
-REMEMBER TO ADD A LIB AND FEATURES FOLDERS
-AND REQUIRE RELATIVE OF CODE IN THE SPEC HELPER
-AND REQUIRE SPEC HELPER IN SPEC FILE

@@ -20,6 +20,12 @@ class Account
   end
 
   def statement
-    p 'date || credit || debit || balance'
+    statement_heading
+  end
+
+  private
+
+  def statement_heading
+    return 'date || credit || debit || balance'
   end
 end
