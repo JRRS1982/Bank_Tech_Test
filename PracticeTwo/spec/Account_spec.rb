@@ -43,10 +43,5 @@ describe 'Acccount ' do
       my_account = Account.new
       expect(my_account.statement).to include('date || credit || debit || balance')
     end
-    
-    it 'includes a heading' do
-      my_account = Account.new
-      expect(my_account.statement).to include('date || credit || debit || balance')
-    end
   end
 end
