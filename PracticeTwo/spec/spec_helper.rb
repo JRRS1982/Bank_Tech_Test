@@ -16,7 +16,9 @@
 
 require 'simplecov'
 require 'simplecov-console'
-require "rspec"
+require 'rspec'
+require 'timecop'
+
 SimpleCov.formatter = SimpleCov::Formatter::Console
 SimpleCov.start
 

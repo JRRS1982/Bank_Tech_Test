@@ -29,6 +29,7 @@ GEM
     simplecov-html (0.10.2)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    timecop (0.9.1)
     unicode-display_width (1.6.0)
 
 PLATFORMS
@@ -38,6 +39,7 @@ DEPENDENCIES
   rspec
   simplecov
   simplecov-console
+  timecop
 
 BUNDLED WITH
    2.0.1

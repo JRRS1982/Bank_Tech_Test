@@ -91,6 +91,19 @@
         1,
         1,
         null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
         null
       ],
       "/Users/Jeremyrrsmith/Coding-Projects/Makers Academy/Week 10/Bank_Tech_Test/PracticeTwo/lib/Transaction.rb": [
@@ -98,11 +111,17 @@
         1,
         null,
         1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
         1,
         null,
         null
       ]
     },
-    "timestamp": 1559756080
+    "timestamp": 1559759067
   }
 }
