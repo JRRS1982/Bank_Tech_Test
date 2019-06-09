@@ -1,9 +1,7 @@
+require 'pry'
 require 'Account'
 
 describe 'Acccount ' do
-
-  let(:today) { Date.new }
-
   describe '#deposit' do
     it 'allows you to deposit amounts' do
       my_account = Account.new
@@ -16,7 +14,7 @@ describe 'Acccount ' do
       my_account.deposit(200)
       expect(my_account.balance).to eq(200)
     end
-
+    
     it 'shows balance after a deposit' do
       my_account = Account.new
       expect(my_account.deposit(200)).to eq(200)
