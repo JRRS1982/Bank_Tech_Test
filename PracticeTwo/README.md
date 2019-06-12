@@ -26,26 +26,40 @@ Should there be any images, please find them in the images folder of the project
 As a person with money,
 I want to protect it in a guarded account,
 so that I dont need to protect it myself.
+DONE.
 
 As a person with money,
 I want to add more to my account whenever I choose to do so,
 so that i can build a big nest egg for retirement one day.
+DONE.
 
 As a person with money,
 I want to be able to see what i have in my account,
 so that i can check that the bank hasn't stolen my money itself.
+DONE.
 
 As a person with money,
 I want to be able to withdral from the account i have saved into,
 so that i can spend my hard earnt money.
+DONE.
 
 As a person with money,
 I want to see the balance of my account after each transaction,
 so that i am aware of my current balance.
+DONE.
 
 As a person with money,
 I want to see a nice tidy table of the transactions,
 so that i am can look over all the transactions lazily.
+
+As a person with money,
+I want my statement to have a heading seperating the transactions,
+so that it is clear which transaction is which.
+DONE.
+
+As a person with money,
+I want the body of my statement to contain the date, credit, debit and balance,
+so that its nice and tidy.
 
 AT COMPLETION: PROGRESS OF SOLVING THE USER STORIES, HOW FAR DID I GET IN SOLVING THEM?
 

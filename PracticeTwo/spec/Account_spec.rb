@@ -2,6 +2,10 @@ require 'pry'
 require 'Account'
 
 describe 'Acccount ' do
+  before do  
+  Timecop.freeze(Time.new(1982, 7 , 9))
+  end
+
   describe '#deposit' do
     it 'allows you to deposit amounts' do
       my_account = Account.new
@@ -39,7 +43,17 @@ describe 'Acccount ' do
   describe '#statement' do
     it 'includes a heading' do
       my_account = Account.new
-      expect(my_account.statement).to include('date || credit || debit || balance')
+      expect(my_account.statement_heading).to include('date || credit || debit || balance')
     end
+
+    it 'includes the transactions' do
+      my_account = Account.new
+      my_account.deposit(100)
+      expect(my_account.statement_body).to eq('09/07/1982 || 100.00 || 0.00 || 100.00')
+    end
+  end
+
+  after do
+    Timecop.return
   end
 end
