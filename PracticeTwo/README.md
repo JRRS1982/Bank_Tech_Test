@@ -1,6 +1,6 @@
 # Project title
 
-This is my second attempt at the Bank Tech Test, for practice and repetition.
+This is my second attempt at the Bank Tech Test, for practice and learning through repetition.
 
 ## Motivation / Approach
 
@@ -14,8 +14,8 @@ working with it!
 
 ### Build status
 
-The project is currently under construction, it may not be completed as this is
-a practice exercise.
+The project is a practice exercise, so could and can be improved upon, but
+I don't consider that necessary at this time.
 
 ### Screenshots / UML / Notes / Diagrams
 
@@ -26,42 +26,44 @@ Should there be any images, please find them in the images folder of the project
 As a person with money,
 I want to protect it in a guarded account,
 so that I dont need to protect it myself.
-DONE.
+DONE - account object. 
 
 As a person with money,
 I want to add more to my account whenever I choose to do so,
 so that i can build a big nest egg for retirement one day.
-DONE.
+DONE - deposit method on account object.
 
 As a person with money,
 I want to be able to see what i have in my account,
 so that i can check that the bank hasn't stolen my money itself.
-DONE.
+DONE - statement.
 
 As a person with money,
 I want to be able to withdral from the account i have saved into,
 so that i can spend my hard earnt money.
-DONE.
+DONE - withdrawal method on account object.
 
 As a person with money,
 I want to see the balance of my account after each transaction,
 so that i am aware of my current balance.
-DONE.
+DONE - deposit and withdrawal show balance after running.
 
 As a person with money,
 I want to see a nice tidy table of the transactions,
 so that i am can look over all the transactions lazily.
+DONE - formatting to the statement
 
 As a person with money,
 I want my statement to have a heading seperating the transactions,
 so that it is clear which transaction is which.
-DONE.
+DONE - statement header method.
 
 As a person with money,
 I want the body of my statement to contain the date, credit, debit and balance,
 so that its nice and tidy.
+DONE - statement.
 
-AT COMPLETION: PROGRESS OF SOLVING THE USER STORIES, HOW FAR DID I GET IN SOLVING THEM?
+I beleive that all of the user stories here are complete.
 
 ## Acceptance criteria (of the tech test)
 
@@ -115,7 +117,19 @@ No API used in this project.
 
 ## Reflection / further development
 
-WHAT FURTHER FEATURES WOULD I ADD IF I HAD MORE TIME?
+I am happy with the state of the project at the moment, I may
+return to it at a later stage and redo the project but I have
+learnt a fair bit while doing this and consider it a success.
+
+Next time I approach the project I would be a bit tidier with
+the code, as I think i could encapsulate the statement into
+a seperate object. Mocking/stubbing would be done better and
+I would probably spend less time on the problem, and complete
+it in one go, rather than split over the broken hours that I
+currently have available while abroad.
+
+I would also make better use of spechelpers as didn't make it
+as easy as i could have for myself!
 
 ## Credits / team members
 
