@@ -18,6 +18,20 @@ describe 'Acccount ' do
       my_account.deposit(200)
       expect(my_account.account_balance).to eq(200)
     end
+
+    it 'deposit multiple times' do
+      my_account = Account.new
+      my_account.deposit(200)
+      my_account.deposit(100)
+      expect(my_account.account_balance).to eq(300)
+    end
+
+    it 'negative deposits are actually withdrawls' do
+      my_account = Account.new
+      my_account.deposit(100)
+      my_account.deposit(-100)
+      expect(my_account.account_balance).to eq(0)
+    end
     
     it 'shows balance after a deposit' do
       my_account = Account.new
@@ -31,6 +45,20 @@ describe 'Acccount ' do
       my_account.deposit(150)
       my_account.withdrawal(100)
       expect(my_account.account_balance).to eq(50)
+    end
+
+    it 'allows multiple withdrawals' do
+      my_account = Account.new
+      my_account.deposit(150)
+      my_account.withdrawal(100)
+      my_account.withdrawal(25)
+      expect(my_account.account_balance).to eq(25)
+    end
+
+    it 'negative withdrawls are actually credits' do
+      my_account = Account.new
+      my_account.deposit(150)
+      expect(my_account.withdrawal(-100)).to eq(250)
     end
 
     it 'shows balance after a withdrawal' do
@@ -57,6 +85,14 @@ describe 'Acccount ' do
       my_account.deposit(100)
       my_account.deposit(75)
       expect(my_account.statement).to eq("09/07/1982 || 100.00 || 0.00 || 100.00\n09/07/1982 || 75.00 || 0.00 || 175.00" )
+    end
+
+    it 'both deposit and withdrawls that are added up' do
+      my_account = Account.new
+      my_account.deposit(100)
+      my_account.deposit(50)
+      my_account.withdrawal(50)
+      expect(my_account.statement).to eq("09/07/1982 || 100.00 || 0.00 || 100.00\n09/07/1982 || 50.00 || 0.00 || 150.00\n09/07/1982 || 0.00 || 50.00 || 100.00" )
     end
   end
 

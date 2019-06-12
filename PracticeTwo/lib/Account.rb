@@ -52,7 +52,11 @@ class Account
   def statement_body
     staged_balance = 0 
     @listing.map do |tr|
-      staged_balance += tr.value
+      if tr.credit == true
+        staged_balance += tr.value
+      else
+        staged_balance -= tr.value
+      end
 
       if tr.credit == true
         the_credit = tr.value
