@@ -10,6 +10,8 @@ class Account
   end
 
   def deposit(value)
+    new_balance = @account_balance += value
+
     if value >= 0
       credit = true
       debit = false
@@ -19,10 +21,14 @@ class Account
     end
     
     @listing << Transaction.new(value: value, credit: credit, debit: debit)
-    balance
+
+    @account_balance = new_balance
+    @account_balance
   end
 
   def withdrawal(value)
+    new_balance = @account_balance -= value
+    
     if value >= 0
       credit = false
       debit = true
@@ -33,36 +39,34 @@ class Account
 
     negative_value = value * -1
     @listing << Transaction.new(value: value, credit: credit, debit: debit)
-    balance
-  end
-
-  def balance
-    @account_balance = 0
-    @listing.each { |x| 
-      if x.credit == true 
-        @account_balance += x.value
-      else
-        @account_balance -= x.value
-      end  
-    }
+    
+    @account_balance = new_balance
     @account_balance
   end
 
+  def statement
+    statement_heading
+    statement_body
+  end
+
   def statement_body
+    staged_balance = 0 
     @listing.map do |tr|
+      staged_balance += tr.value
+
       if tr.credit == true
-        do_this = tr.value
-        do_that = 0
+        the_credit = tr.value
+        the_debit = 0
       else
-        do_this = 0
-        do_that = tr.value
+        the_credit = 0
+        the_debit = tr.value
       end
 
-      "#{tr.date} || #{"%0.2f"%[do_this]} || #{"%0.2f"%[do_that]} || #{"%0.2f"%[@account_balance]}"
+      "#{tr.date} || #{"%0.2f"%[the_credit]} || #{"%0.2f"%[the_debit]} || #{"%0.2f"%[staged_balance]}"
     end.join("\n")
   end
 
   def statement_heading
-    'date || credit || debit || balance\n'
+    "date || credit || debit || balance"
   end  
 end
